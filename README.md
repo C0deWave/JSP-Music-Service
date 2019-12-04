@@ -1,8 +1,9 @@
 # JSP-Music-Service
 대학교 DB과제
-내
-<img src="./JulonMusics/WebContext/capture/album.jpg" width="50%" height="30%" title="메인 화면" alt="메인 화면"></img>
-위 프로젝트는 DB 수업 시간에 배운 SQL 문을 활용해서 음악파일을 CRUD할수 있게 제작했다.
+
+프로젝트 이미지
+<img src="/JulonMusics/WebContent/capture/album.PNG" title="메인 화면" alt="메인 화면"></img>
+위 프로젝트는 DB 수업 시간에 배운 SQL 문을 활용해서 음악파일을 CRUD할수 있게 만든 JSP프로젝트이다.
 
 또한 처음 페이지에서 JFreeChart를 사용해서 단순히 음악을 들은 OLTP를 OLAP로 나타나게 해 보기도 했다.
 
@@ -72,6 +73,9 @@ CREATE TABLE PLAYMUSIC
 
 처음 정보 추가하기 예제
 미리 정보를 넣고 싶다면 아래와 같은 예제의 방식으로 넣으면 된다.
+
+내부적으로 파일을 읽거나 삭제할 때 파일의 이름을 ID값으로 바꾸어서 할당 하도록 했다.
+한글이나 공백이 들어간 파일의 경우에는 mp3재생이 되지 않았다.
 <pre><code>//아티스트 내용 추가
 INSERT INTO ARTIST(ID,NAME,DEBUTYEAR) VALUES (1,'트와이스',2015);
 INSERT INTO ARTIST(ID,NAME,DEBUTYEAR) VALUES (2,'레드벨벳',2014);
